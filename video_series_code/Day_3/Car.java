@@ -17,6 +17,10 @@ public class Car {
     int numberOfPeopleInCar=1;
     int maxNumberOfPeopleInCar=6;
 
+    public Car(){
+
+    }
+
     public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn){
         maxSpeed=customMaxSpeed;
         weight=customWeight;
@@ -47,6 +51,9 @@ public class Car {
         if(numberOfPeopleInCar>0){
             numberOfPeopleInCar--;
         }
+        else{
+            System.out.println("No one is in the Car"+ numberOfPeopleInCar);
+        }
     }
 
     public double howManyMilesTillOutOfGas(){
@@ -60,11 +67,24 @@ public class Car {
     public void turnTheCarOn(){
         if(!isTheCarOn){
             isTheCarOn=true;
+        }else{
+            System.out.println("The car is already on " + true);
         }
     }
 
     public static void main(String[] args) {
-        
+        Car tommyCar=new Car();
+        tommyCar.getOut();
+        tommyCar.getOut();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.turnTheCarOn();
+        tommyCar.turnTheCarOn();
 
     }
 }
