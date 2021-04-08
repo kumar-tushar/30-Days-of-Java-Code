@@ -3,7 +3,7 @@ package Solutions.Day_3;
 import java.util.Scanner;
 
 public class Solution {
-    
+
     public void numCheck(){
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
