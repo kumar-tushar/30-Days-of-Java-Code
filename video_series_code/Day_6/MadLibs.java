@@ -53,7 +53,6 @@ public class MadLibs {
         return randomNums;
     }
 
-    // Setters
 
     public void setStory(String newStory) {
         this.story = newStory;
