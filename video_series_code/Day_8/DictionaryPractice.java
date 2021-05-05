@@ -31,13 +31,13 @@ public class DictionaryPractice {
         System.out.println();
         System.out.println();
 
-        Map<String,Boolean> shoppingList=new HashMap<>();
+        Map<String,Integer> shoppingList=new HashMap<>();
 
-        shoppingList.put("Ham", true);
-        shoppingList.put("Bread", Boolean.TRUE);
-        shoppingList.put("Oreo", true);
-        shoppingList.put("Eggs", Boolean.FALSE);
-        shoppingList.put("Sugar", false);
+        shoppingList.put("Ham", 1);
+        shoppingList.put("Bread", 2);
+        shoppingList.put("Oreo", 3);
+        shoppingList.put("Eggs", 4);
+        shoppingList.put("Sugar", 5);
 
         System.out.println(shoppingList.get("Ham"));
         System.out.println(shoppingList.get("Sugar"));
