@@ -24,7 +24,5 @@ public class Animal {
         c.eat();
         d.run();
         c.prance();
-
-
     }
 }
