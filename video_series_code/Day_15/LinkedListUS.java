@@ -1,16 +1,18 @@
 package video_series_code.Day_15;
 
-public class LinkedList {
+import java.util.LinkedList;
+
+public class LinkedListUS {
 
     Node head;
     int count;
 
-    public LinkedList() {
+    public LinkedListUS() {
         head = null;
         count = 0;
     }
 
-    public LinkedList(int data) {
+    public LinkedListUS(int data) {
         head = new Node(data);
         count = 1;
     }
@@ -40,14 +42,25 @@ public class LinkedList {
         return count;
     }
 
-    public bool
+    public boolean isEmpty(){
+        return head==null;
+    }
 
-
-
-
-
+    public void remove(){
+        Node current=head;
+        while(current.getNext().getNext()!=null){
+            current=current.getNext();
+        }
+        current.setNext(null);
+        count--;
+    }
 
     public static void main(String[] args){
+        LinkedList<String> linkedList=new LinkedList<>();
+        linkedList.add("Alice");
+        System.out.println(linkedList);
+        linkedList.add("Alexa");
+        System.out.println(linkedList);
 
     }
 }
