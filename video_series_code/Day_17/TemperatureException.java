@@ -1,4 +1,5 @@
 package video_series_code.Day_17;
 
-public class TemperatureException {
+public class TemperatureException extends Exception {
+
 }
