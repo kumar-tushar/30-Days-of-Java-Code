@@ -10,7 +10,4 @@ public class Enemy implements Character {
         System.out.println("The enemy heals  himself.");
     }
 
-     public void weaponDraw(){
-         System.out.println("draw out weapon");
-     }
 }
