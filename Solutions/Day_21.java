@@ -1,6 +1,6 @@
-package video_series_code.Day_21;
+package Solutions;
 
-public class ArrayPractice {
+public class Day_21 {
 
     public static <E> void printArray(E[] array){
         for(E element: array)
@@ -9,7 +9,6 @@ public class ArrayPractice {
 
 
     public static void main(String[] args) {
-
         printArray(new Object[]{3, 1, 2, 3, 2, "Hello", "World"});
 
     }
