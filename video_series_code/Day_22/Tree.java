@@ -6,6 +6,4 @@ public interface Tree <D extends Comparable<D>> {
     public boolean member(D elt);
     public NonEmptyBST<D> add(D elt);
 
-
-
 }
