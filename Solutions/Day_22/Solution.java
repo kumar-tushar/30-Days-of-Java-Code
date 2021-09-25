@@ -22,7 +22,7 @@ class Solution{
         if(root.right!=null){
             heightright=getHeight(root.right)+1;
         }
-        return (heightleft>heightright?heightleft:heightright);
+        return (Math.max(heightleft, heightright));
     }
 
     public static Node insert(Node root,int data){
@@ -42,7 +42,7 @@ class Solution{
             return root;
         }
     }
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
         Node root=null;
@@ -50,6 +50,7 @@ class Solution{
             int data=sc.nextInt();
             root=insert(root,data);
         }
+
         int height=getHeight(root);
         System.out.println(height);
     }
