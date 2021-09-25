@@ -1,7 +1,6 @@
-package Solutions;
+package Solutions.Day_21;
 
-public class Day_21 {
-
+public class Solution {
     public static <E> void printArray(E[] array){
         for(E element: array)
             System.out.println(element);
