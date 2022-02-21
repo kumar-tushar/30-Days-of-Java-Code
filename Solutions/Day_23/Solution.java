@@ -1,6 +1,7 @@
-package Solutions.Day_22;
+package Solutions.Day_23;
 
-
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 class Node{
@@ -12,19 +13,20 @@ class Node{
     }
 }
 class Solution{
+    static void levelOrder(Node root){
+        //Write your code here
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
 
-    public static int getHeight(Node root){
-        int heightleft=0;
-        int heightright=0;
-        if(root.left!=null){
-            heightleft=getHeight(root.left)+1;
+        while (!queue.isEmpty()) {
+            Node curr = queue.remove();
+            System.out.print(curr.data + " ");
+
+            if (curr.left != null) queue.add(curr.left);
+            if (curr.right != null) queue.add(curr.right);
         }
-        if(root.right!=null){
-            heightright=getHeight(root.right)+1;
-        }
-        return (Math.max(heightleft, heightright));
+
     }
-
     public static Node insert(Node root,int data){
         if(root==null){
             return new Node(data);
@@ -50,7 +52,6 @@ class Solution{
             int data=sc.nextInt();
             root=insert(root,data);
         }
-        int height=getHeight(root);
-        System.out.println(height);
+        levelOrder(root);
     }
 }
