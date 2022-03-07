@@ -5,11 +5,11 @@ class NonEmptyBST<D extends Comparable> implements Tree<D> {
     Tree<D> left;
     Tree<D> right;
 
-//    public NonEmptyBST(D elt) {
-//        data = elt;
-//        left = new EmptyBST<D>();
-//        right = new EmptyBST<D>();
-//    }
+    public NonEmptyBST(D elt) {
+        data = elt;
+        left = new EmptyBST<D>();
+        right = new EmptyBST<D>();
+    }
 
     public NonEmptyBST(D elt, Tree<D> leftTree, Tree<D> rightTree) {
         data = elt;

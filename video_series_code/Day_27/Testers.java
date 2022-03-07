@@ -14,31 +14,31 @@ public class Testers {
     }
 
     // random binary search trees
-//    public static Tree rndTree(int count) {
-//        if (count == 0) {
-//            return new EmptyBST();
-//        } else {
-//            return rndTree(count - 1).add(rndInt(0, 50));
-//        }
-//    }
+    public static Tree rndTree(int count) {
+        if (count == 0) {
+            return new EmptyBST();
+        } else {
+            return rndTree(count - 1).add(rndInt(0, 50));
+        }
+    }
 
 
 
     // x + (x * 2) = x + x * 2
 
-//    public static void checkIsEmpty(Tree t) throws Exception{
-//        // if the tree t is an instance of EmptyBST --> t.isEmpty -> true
-//        // if the tree t is an instance of NonEmptyBST --> t.isEmpty -> false
-//        if (t instanceof EmptyBST) {
-//            if (!t.isEmpty()) {
-//                throw new Exception("All is not good, the tree is an EmptyBST and it is non-empty");
-//            }
-//        } else if (t instanceof NonEmptyBST) {
-//            if (t.isEmpty()) {
-//                throw new Exception("All is not good, the tree is a NonEmptyBST and it is empty");
-//            }
-//        }
-//    }
+    public static void checkIsEmpty(Tree t) throws Exception{
+        // if the tree t is an instance of EmptyBST --> t.isEmpty -> true
+        // if the tree t is an instance of NonEmptyBST --> t.isEmpty -> false
+        if (t instanceof EmptyBST) {
+            if (!t.isEmpty()) {
+                throw new Exception("All is not good, the tree is an EmptyBST and it is non-empty");
+            }
+        } else if (t instanceof NonEmptyBST) {
+            if (t.isEmpty()) {
+                throw new Exception("All is not good, the tree is a NonEmptyBST and it is empty");
+            }
+        }
+    }
 
     public static void checkAddMemberCardinality(Tree t, int x) throws Exception {
         int nT = (t.add(x)).cardinality();
